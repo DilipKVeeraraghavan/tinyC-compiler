@@ -1,0 +1,66 @@
+syntax error   ******************************** GLOBAL SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+            add                      function      NULL         0         0         function-ST
+           main                      function      NULL         0         0         function-ST
+   ---------------------------------------------------------------------------------------
+
+    ******************************        add SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+              a                           int      NULL         8         0                NULL
+              b                           int      NULL         8         8                NULL
+ $return_value$                           int      NULL         8        16                NULL
+              c                           int      NULL         8        24                NULL
+        _tmp000                           int      NULL         8        32                NULL
+   ---------------------------------------------------------------------------------------
+
+    ******************************       main SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+ $return_value$                           int      NULL         8         0                NULL
+              p                           int      NULL         8         8                NULL
+              n                           int      NULL         8        16                NULL
+              i                           int      NULL         8        24                NULL
+              d                           int      NULL         8        32                NULL
+            sum                           int      NULL         8        40                NULL
+              e                           int      NULL         8        48                NULL
+            err                           int      NULL         8        56                NULL
+        _tmp000                           int         0         8        64                NULL
+        _tmp001                           int         0         8        72                NULL
+        _tmp002                           int      NULL         8        80                NULL
+        _tmp003                           int      NULL         8        88                NULL
+        _tmp004                          void      NULL         0        96                NULL
+        _tmp005                           int      NULL         8        96                NULL
+        _tmp006                           int      NULL         8       104                NULL
+   ---------------------------------------------------------------------------------------
+
+
+
+0)  FUNCTION add:
+1) _tmp000 = a + b
+2) c = _tmp000
+3) return c
+4)  FUNCTION ----:
+5) n = err
+6) _tmp000 = 0
+7) sum = _tmp000
+8) _tmp001 = 0
+9) i = _tmp001
+10) if i<n goto 12
+11) goto 14
+12) _tmp002 = 1
+13) goto 20
+14) _tmp002 = 0
+15) goto ---
+16) goto 27
+17) _tmp003 = i
+18) i = i + 1
+19) goto 10
+20) e = err
+21) param sum
+22) param e
+23) _tmp005 = call add, 2
+24) _tmp006 = sum + _tmp005
+25) sum = _tmp006
+26) goto 17

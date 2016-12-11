@@ -1,0 +1,135 @@
+   ******************************** GLOBAL SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+      factorial                      function      NULL         0         0         function-ST
+      fibonacci                      function      NULL         0         0         function-ST
+           main                      function      NULL         0         0         function-ST
+   ---------------------------------------------------------------------------------------
+
+    ******************************  factorial SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+              n                           int      NULL         8         0                NULL
+ $return_value$                           int      NULL         8         8                NULL
+        _tmp000                           int         1         8        16                NULL
+        _tmp001                           int      NULL         8        24                NULL
+              j                           int   _tmp003         8        32                NULL
+        _tmp002                           int         1         8        40                NULL
+        _tmp003                           int      NULL         8        48                NULL
+              t                           int   _tmp005         8        56                NULL
+        _tmp004                          void      NULL         0        64                NULL
+        _tmp005                           int      NULL         8        64                NULL
+        _tmp006                           int      NULL         8        72                NULL
+   ---------------------------------------------------------------------------------------
+
+    ******************************  fibonacci SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+              n                           int      NULL         8         0                NULL
+ $return_value$                           int      NULL         8         8                NULL
+              t                           int      NULL         8        16                NULL
+              p                           int      NULL         8        24                NULL
+              q                           int      NULL         8        32                NULL
+        _tmp000                           int         1         8        40                NULL
+        _tmp001                           int      NULL         8        48                NULL
+        _tmp002                           int         1         8        56                NULL
+        _tmp003                           int         0         8        64                NULL
+        _tmp004                           int      NULL         8        72                NULL
+        _tmp005                           int         0         8        80                NULL
+        _tmp006                           int         1         8        88                NULL
+        _tmp007                           int      NULL         8        96                NULL
+        _tmp008                          void      NULL         0       104                NULL
+        _tmp009                           int      NULL         8       104                NULL
+        _tmp010                           int         2         8       112                NULL
+        _tmp011                           int      NULL         8       120                NULL
+        _tmp012                          void      NULL         0       128                NULL
+        _tmp013                           int      NULL         8       128                NULL
+        _tmp014                           int      NULL         8       136                NULL
+   ---------------------------------------------------------------------------------------
+
+    ******************************       main SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+ $return_value$                           int      NULL         8         0                NULL
+              n                           int      NULL         8         8                NULL
+            err                           int      NULL         8        16                NULL
+           fact                           int      NULL         8        24                NULL
+        _tmp000                          void      NULL         0        32                NULL
+        _tmp001                           int      NULL         8        32                NULL
+            fib                           int      NULL         8        40                NULL
+        _tmp002                          void      NULL         0        48                NULL
+        _tmp003                           int      NULL         8        48                NULL
+        _tmp004                           int         0         8        56                NULL
+   ---------------------------------------------------------------------------------------
+
+
+
+0)  FUNCTION factorial:
+1) _tmp000 = 1
+2) if n>_tmp000 goto 4
+3) goto 6
+4) _tmp001 = 1
+5) goto 9
+6) _tmp001 = 0
+7) goto 18
+8) goto 18
+9) _tmp002 = 1
+10) _tmp003 = n - _tmp002
+11) j = _tmp003
+12) param j
+13) _tmp005 = call factorial, 1
+14) t = _tmp005
+15) _tmp006 = n * t
+16) n = _tmp006
+17) goto 18
+18) return n
+19)  FUNCTION fibonacci:
+20) _tmp000 = 1
+21) if n==_tmp000 goto 23
+22) goto 25
+23) _tmp001 = 1
+24) goto 28
+25) _tmp001 = 0
+26) goto 31
+27) goto 56
+28) _tmp002 = 1
+29) t = _tmp002
+30) goto 56
+31) _tmp003 = 0
+32) if n==_tmp003 goto 34
+33) goto 36
+34) _tmp004 = 1
+35) goto 39
+36) _tmp004 = 0
+37) goto 42
+38) goto 55
+39) _tmp005 = 0
+40) t = _tmp005
+41) goto 56
+42) _tmp006 = 1
+43) _tmp007 = n - _tmp006
+44) param _tmp007
+45) _tmp009 = call fibonacci, 1
+46) p = _tmp009
+47) _tmp010 = 2
+48) _tmp011 = n - _tmp010
+49) param _tmp011
+50) _tmp013 = call fibonacci, 1
+51) q = _tmp013
+52) _tmp014 = p + q
+53) t = _tmp014
+54) goto 56
+55) goto 56
+56) return t
+57)  FUNCTION main:
+58) n = err
+59) param n
+60) _tmp001 = call factorial, 1
+61) fact = _tmp001
+62) n = err
+63) param n
+64) _tmp003 = call fibonacci, 1
+65) fib = _tmp003
+66) _tmp004 = 0
+67) return _tmp004
+68) END of PROGRAM

@@ -1,0 +1,213 @@
+   ******************************** GLOBAL SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+            add                      function      NULL         0         0         function-ST
+            sub                      function      NULL         0         0         function-ST
+           mult                      function      NULL         0         0         function-ST
+            div                      function      NULL         0         0         function-ST
+            mod                      function      NULL         0         0         function-ST
+           main                      function      NULL         0         0         function-ST
+   ---------------------------------------------------------------------------------------
+
+    ******************************        add SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+              a                           int      NULL         8         0                NULL
+              b                           int      NULL         8         8                NULL
+ $return_value$                           int      NULL         8        16                NULL
+              c                           int      NULL         8        24                NULL
+        _tmp000                           int      NULL         8        32                NULL
+   ---------------------------------------------------------------------------------------
+
+    ******************************        sub SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+              a                           int      NULL         8         0                NULL
+              b                           int      NULL         8         8                NULL
+ $return_value$                           int      NULL         8        16                NULL
+              c                           int      NULL         8        24                NULL
+        _tmp000                           int      NULL         8        32                NULL
+   ---------------------------------------------------------------------------------------
+
+    ******************************       mult SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+              a                           int      NULL         8         0                NULL
+              b                           int      NULL         8         8                NULL
+ $return_value$                           int      NULL         8        16                NULL
+              c                           int      NULL         8        24                NULL
+        _tmp000                           int      NULL         8        32                NULL
+   ---------------------------------------------------------------------------------------
+
+    ******************************        div SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+              a                           int      NULL         8         0                NULL
+              b                           int      NULL         8         8                NULL
+ $return_value$                           int      NULL         8        16                NULL
+              c                           int      NULL         8        24                NULL
+        _tmp000                           int      NULL         8        32                NULL
+   ---------------------------------------------------------------------------------------
+
+    ******************************        mod SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+              a                           int      NULL         8         0                NULL
+              b                           int      NULL         8         8                NULL
+ $return_value$                           int      NULL         8        16                NULL
+              c                           int      NULL         8        24                NULL
+        _tmp000                           int      NULL         8        32                NULL
+   ---------------------------------------------------------------------------------------
+
+    ******************************       main SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+ $return_value$                           int      NULL         8         0                NULL
+              n                           int      NULL         8         8                NULL
+              a                           int      NULL         8        16                NULL
+              b                           int      NULL         8        24                NULL
+            ans                           int      NULL         8        32                NULL
+            err                           int      NULL         8        40                NULL
+        _tmp000                           int         1         8        48                NULL
+        _tmp001                           int      NULL         8        56                NULL
+        _tmp002                           int         5         8        64                NULL
+        _tmp003                           int      NULL         8        72                NULL
+        _tmp004                           int      NULL         8        80                NULL
+        _tmp005                           int         1         8        88                NULL
+        _tmp006                           int      NULL         8        96                NULL
+        _tmp007                          void      NULL         0       104                NULL
+        _tmp008                           int      NULL         8       104                NULL
+        _tmp009                           int         2         8       112                NULL
+        _tmp010                           int      NULL         8       120                NULL
+        _tmp011                          void      NULL         0       128                NULL
+        _tmp012                           int      NULL         8       128                NULL
+        _tmp013                           int         3         8       136                NULL
+        _tmp014                           int      NULL         8       144                NULL
+        _tmp015                          void      NULL         0       152                NULL
+        _tmp016                           int      NULL         8       152                NULL
+        _tmp017                           int         4         8       160                NULL
+        _tmp018                           int      NULL         8       168                NULL
+        _tmp019                          void      NULL         0       176                NULL
+        _tmp020                           int      NULL         8       176                NULL
+        _tmp021                           int         5         8       184                NULL
+        _tmp022                           int      NULL         8       192                NULL
+        _tmp023                          void      NULL         0       200                NULL
+        _tmp024                           int      NULL         8       200                NULL
+        _tmp025                           int         0         8       208                NULL
+   ---------------------------------------------------------------------------------------
+
+
+
+0)  FUNCTION add:
+1) _tmp000 = a + b
+2) c = _tmp000
+3) return c
+4)  FUNCTION sub:
+5) _tmp000 = a - b
+6) c = _tmp000
+7) return c
+8)  FUNCTION mult:
+9) _tmp000 = a * b
+10) c = _tmp000
+11) return c
+12)  FUNCTION div:
+13) _tmp000 = a / b
+14) c = _tmp000
+15) return c
+16)  FUNCTION mod:
+17) _tmp000 = a % b
+18) c = _tmp000
+19) return c
+20)  FUNCTION main:
+21) n = err
+22) _tmp000 = 1
+23) if n>=_tmp000 goto 25
+24) goto 27
+25) _tmp001 = 1
+26) goto 29
+27) _tmp001 = 0
+28) goto 110
+29) _tmp002 = 5
+30) if n<=_tmp002 goto 32
+31) goto 34
+32) _tmp003 = 1
+33) goto 37
+34) _tmp003 = 0
+35) goto 110
+36) goto 110
+37) a = err
+38) b = err
+39) _tmp005 = 1
+40) if n==_tmp005 goto 42
+41) goto 44
+42) _tmp006 = 1
+43) goto 47
+44) _tmp006 = 0
+45) goto 52
+46) goto 108
+47) param a
+48) param b
+49) _tmp008 = call add, 2
+50) ans = _tmp008
+51) goto 108
+52) _tmp009 = 2
+53) if n==_tmp009 goto 55
+54) goto 57
+55) _tmp010 = 1
+56) goto 60
+57) _tmp010 = 0
+58) goto 65
+59) goto 107
+60) param a
+61) param b
+62) _tmp012 = call sub, 2
+63) ans = _tmp012
+64) goto 108
+65) _tmp013 = 3
+66) if n==_tmp013 goto 68
+67) goto 70
+68) _tmp014 = 1
+69) goto 73
+70) _tmp014 = 0
+71) goto 78
+72) goto 106
+73) param a
+74) param b
+75) _tmp016 = call mult, 2
+76) ans = _tmp016
+77) goto 108
+78) _tmp017 = 4
+79) if n==_tmp017 goto 81
+80) goto 83
+81) _tmp018 = 1
+82) goto 86
+83) _tmp018 = 0
+84) goto 91
+85) goto 105
+86) param a
+87) param b
+88) _tmp020 = call div, 2
+89) ans = _tmp020
+90) goto 108
+91) _tmp021 = 5
+92) if n==_tmp021 goto 94
+93) goto 96
+94) _tmp022 = 1
+95) goto 99
+96) _tmp022 = 0
+97) goto 108
+98) goto 104
+99) param a
+100) param b
+101) _tmp024 = call mod, 2
+102) ans = _tmp024
+103) goto 108
+104) goto 108
+105) goto 108
+106) goto 108
+107) goto 108
+108) n = err
+109) goto 22
+110) _tmp025 = 0
+111) return _tmp025
+112) END of PROGRAM

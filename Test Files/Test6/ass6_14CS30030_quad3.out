@@ -1,0 +1,91 @@
+   ******************************** GLOBAL SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+        findmax                      function      NULL         0         0         function-ST
+           main                      function      NULL         0         0         function-ST
+   ---------------------------------------------------------------------------------------
+
+    ******************************    findmax SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+              a                           int      NULL         8         0                NULL
+              b                           int      NULL         8         8                NULL
+              c                           int      NULL         8        16                NULL
+ $return_value$                           int      NULL         8        24                NULL
+            max                           int         a         8        32                NULL
+        _tmp000                           int      NULL         8        40                NULL
+        _tmp001                           int      NULL         8        48                NULL
+        _tmp002                           int      NULL         8        56                NULL
+   ---------------------------------------------------------------------------------------
+
+    ******************************       main SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+ $return_value$                           int      NULL         8         0                NULL
+              a                           int      NULL         8         8                NULL
+              b                           int      NULL         8        16                NULL
+              c                           int      NULL         8        24                NULL
+            err                           int      NULL         8        32                NULL
+            max                           int      NULL         8        40                NULL
+        _tmp000                          void      NULL         0        48                NULL
+        _tmp001                           int      NULL         8        48                NULL
+        _tmp002                           int      NULL         8        56                NULL
+        _tmp003                           int      NULL         8        64                NULL
+        _tmp004                           int      NULL         8        72                NULL
+        _tmp005                           int      NULL         8        80                NULL
+        _tmp006                           int         0         8        88                NULL
+   ---------------------------------------------------------------------------------------
+
+
+
+0)  FUNCTION findmax:
+1) max = a
+2) if b>a goto 4
+3) goto 6
+4) _tmp000 = 1
+5) goto 9
+6) _tmp000 = 0
+7) goto 21
+8) goto 31
+9) if b>c goto 11
+10) goto 13
+11) _tmp001 = 1
+12) goto 16
+13) _tmp001 = 0
+14) goto 18
+15) goto 20
+16) max = b
+17) goto 31
+18) max = c
+19) goto 31
+20) goto 31
+21) if c>a goto 23
+22) goto 25
+23) _tmp002 = 1
+24) goto 28
+25) _tmp002 = 0
+26) goto 31
+27) goto 30
+28) max = c
+29) goto 31
+30) goto 31
+31) return max
+32)  FUNCTION main:
+33) a = err
+34) b = err
+35) c = err
+36) param a
+37) param b
+38) param c
+39) _tmp001 = call findmax, 3
+40) max = _tmp001
+41) _tmp002 = b * c
+42) _tmp003 = _tmp002 * a
+43) a = _tmp003
+44) _tmp004 = a / c
+45) b = _tmp004
+46) _tmp005 = a % b
+47) c = _tmp005
+48) _tmp006 = 0
+49) return _tmp006
+50) END of PROGRAM

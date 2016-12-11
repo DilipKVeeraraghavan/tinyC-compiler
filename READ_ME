@@ -1,0 +1,28 @@
+To Generate and run .asm file 
+-----------------------------
+
+1. Drop the .c test file in the outermost directory containing all the files.
+
+2. Make -
+
+Commands
+(a) make
+	Generate the ./a.out file
+(b) ./a.out < ass6_14CS30030_test1.c > ass6_14CS30030_1.s
+	Generate the .asm file
+(c)	gcc	-m64	ass6_14CS30030_1.s	libmyl.a	-o	1.out
+	Generate the .out file corresponding to the .asm file
+(d) ./1.out
+	Run the generated the file
+
+or you could just run the command 'make run1' which runs all the above commands
+
+
+3. To generate the quads
+------------------------
+Please remove the prints() ,readi() etc functions from the code as they are not part of external library.
+
+And then uncomment the part in ass6_14CS30030_main.c and run the commands
+
+(a) make
+(b) ./a.out < ass6_14CS30030_test1.c > ass6_14CS30030_1quad.out

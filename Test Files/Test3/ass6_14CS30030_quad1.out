@@ -1,0 +1,115 @@
+   ******************************** GLOBAL SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+           main                      function      NULL         0         0         function-ST
+   ---------------------------------------------------------------------------------------
+
+    ******************************       main SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+ $return_value$                           int      NULL         8         0                NULL
+              p                array(50, int)      NULL       400         8                NULL
+        _tmp000                           int        50         8       408                NULL
+              n                           int      NULL         8       416                NULL
+              j                           int      NULL         8       424                NULL
+              i                           int      NULL         8       432                NULL
+              d                           int      NULL         8       440                NULL
+           temp                           int      NULL         8       448                NULL
+            err                           int      NULL         8       456                NULL
+        _tmp001                           int         0         8       464                NULL
+        _tmp002                           int         1         8       472                NULL
+        _tmp003                           int      NULL         8       480                NULL
+        _tmp004                           int      NULL         8       488                NULL
+        _tmp005                           int      NULL         8       496                NULL
+        _tmp006                           int         0         8       504                NULL
+        _tmp007                           int      NULL         8       512                NULL
+        _tmp008                           int         1         8       520                NULL
+        _tmp009                           int      NULL         8       528                NULL
+        _tmp010                           int      NULL         8       536                NULL
+        _tmp011                           int      NULL         8       544                NULL
+        _tmp012                           int      NULL         8       552                NULL
+        _tmp013                           int      NULL         8       560                NULL
+        _tmp014                           int         1         8       568                NULL
+        _tmp015                           int      NULL         8       576                NULL
+        _tmp016                           int      NULL         8       584                NULL
+        _tmp017                           int      NULL         8       592                NULL
+        _tmp018                           int      NULL         8       600                NULL
+        _tmp019                           int      NULL         8       608                NULL
+        _tmp020                           int      NULL         8       616                NULL
+        _tmp021                           int      NULL         8       624                NULL
+        _tmp022                           int         1         8       632                NULL
+        _tmp023                           int      NULL         8       640                NULL
+        _tmp024                           int      NULL         8       648                NULL
+        _tmp025                           int      NULL         8       656                NULL
+        _tmp026                           int         1         8       664                NULL
+        _tmp027                           int      NULL         8       672                NULL
+        _tmp028                           int      NULL         8       680                NULL
+        _tmp029                           int         0         8       688                NULL
+   ---------------------------------------------------------------------------------------
+
+
+
+0)  FUNCTION main:
+1) _tmp000 = 50
+2) n = err
+3) _tmp001 = 0
+4) i = _tmp001
+5) _tmp002 = 1
+6) _tmp003 = n - _tmp002
+7) if i<_tmp003 goto 9
+8) goto 11
+9) _tmp004 = 1
+10) goto 17
+11) _tmp004 = 0
+12) goto 61
+13) goto 61
+14) _tmp005 = i
+15) i = i + 1
+16) goto 5
+17) _tmp006 = 0
+18) j = _tmp006
+19) _tmp007 = n - i
+20) _tmp008 = 1
+21) _tmp009 = _tmp007 - _tmp008
+22) if j<_tmp009 goto 24
+23) goto 26
+24) _tmp010 = 1
+25) goto 32
+26) _tmp010 = 0
+27) goto 14
+28) goto 60
+29) _tmp011 = j
+30) j = j + 1
+31) goto 19
+32) _tmp012 = j * 8
+33) _tmp013 = p[_tmp012]
+34) _tmp014 = 1
+35) _tmp015 = j + _tmp014
+36) _tmp016 = _tmp015 * 8
+37) _tmp017 = p[_tmp016]
+38) if _tmp013>_tmp017 goto 40
+39) goto 42
+40) _tmp018 = 1
+41) goto 45
+42) _tmp018 = 0
+43) goto 29
+44) goto 59
+45) _tmp019 = j * 8
+46) _tmp020 = p[_tmp019]
+47) temp = _tmp020
+48) _tmp021 = j * 8
+49) _tmp022 = 1
+50) _tmp023 = j + _tmp022
+51) _tmp024 = _tmp023 * 8
+52) _tmp025 = p[_tmp024]
+53) p[_tmp021] = _tmp025
+54) _tmp026 = 1
+55) _tmp027 = j + _tmp026
+56) _tmp028 = _tmp027 * 8
+57) p[_tmp028] = temp
+58) goto 29
+59) goto 29
+60) goto 14
+61) _tmp029 = 0
+62) return _tmp029
+63) END of PROGRAM

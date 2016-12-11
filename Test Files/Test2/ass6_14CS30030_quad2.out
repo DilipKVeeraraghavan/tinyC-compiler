@@ -1,0 +1,191 @@
+   ******************************** GLOBAL SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+           main                      function      NULL         0         0         function-ST
+   ---------------------------------------------------------------------------------------
+
+    ******************************       main SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+ $return_value$                           int      NULL         8         0                NULL
+              a                           int      NULL         8         8                NULL
+              b                           int      NULL         8        16                NULL
+              c                           int      NULL         8        24                NULL
+            err                           int      NULL         8        32                NULL
+              x                  pointer(int)      NULL         8        40                NULL
+              y                  pointer(int)      NULL         8        48                NULL
+              z                  pointer(int)      NULL         8        56                NULL
+              p                          char      NULL         8        64                NULL
+              q                          char      NULL         8        72                NULL
+              r                          char      NULL         8        80                NULL
+              m                 pointer(char)      NULL         8        88                NULL
+              n                 pointer(char)      NULL         8        96                NULL
+              o                 pointer(char)      NULL         8       104                NULL
+        _tmp000                          char       'a'         8       112                NULL
+        _tmp001                          char       'b'         8       120                NULL
+        _tmp002                          char       'd'         8       128                NULL
+        _tmp003                 pointer(char)      NULL         8       136                NULL
+        _tmp004                 pointer(char)      NULL         8       144                NULL
+        _tmp005                 pointer(char)      NULL         8       152                NULL
+        _tmp006                  pointer(int)      NULL         8       160                NULL
+        _tmp007                  pointer(int)      NULL         8       168                NULL
+        _tmp008                  pointer(int)      NULL         8       176                NULL
+        _tmp009                           int      NULL         8       184                NULL
+        _tmp010                           int      NULL         8       192                NULL
+              i                           int   _tmp011         8       200                NULL
+        _tmp011                           int         0         8       208                NULL
+        _tmp012                           int      NULL         8       216                NULL
+        _tmp013                           int      NULL         8       224                NULL
+        _tmp014                           int      NULL         8       232                NULL
+        _tmp015                           int      NULL         8       240                NULL
+        _tmp016                           int      NULL         8       248                NULL
+        _tmp017                           int      NULL         8       256                NULL
+        _tmp018                           int      NULL         8       264                NULL
+        _tmp019                          char      NULL         8       272                NULL
+        _tmp020                          char      NULL         8       280                NULL
+        _tmp021                           int      NULL         8       288                NULL
+        _tmp022                          char      NULL         8       296                NULL
+        _tmp023                          char      NULL         8       304                NULL
+        _tmp024                           int      NULL         8       312                NULL
+            car                array(5, char)      NULL        40       320                NULL
+        _tmp025                           int         5         8       360                NULL
+        _tmp026                           int         0         8       368                NULL
+        _tmp027                           int      NULL         8       376                NULL
+        _tmp028                          char       'y'         8       384                NULL
+        _tmp029                           int         1         8       392                NULL
+        _tmp030                           int      NULL         8       400                NULL
+        _tmp031                          char       'o'         8       408                NULL
+        _tmp032                           int         2         8       416                NULL
+        _tmp033                           int      NULL         8       424                NULL
+        _tmp034                          char       'u'         8       432                NULL
+        _tmp035                           int         3         8       440                NULL
+        _tmp036                           int      NULL         8       448                NULL
+        _tmp037                          char       'r'         8       456                NULL
+        _tmp038                           int         4         8       464                NULL
+        _tmp039                           int      NULL         8       472                NULL
+        _tmp040                          char      '\n'         8       480                NULL
+        _tmp041                           int         0         8       488                NULL
+        _tmp042                           int         5         8       496                NULL
+        _tmp043                           int      NULL         8       504                NULL
+        _tmp044                           int      NULL         8       512                NULL
+        _tmp045                           int         0         8       520                NULL
+   ---------------------------------------------------------------------------------------
+
+
+
+0)  FUNCTION main:
+1) _tmp000 = 'a'
+2) p = _tmp000
+3) _tmp001 = 'b'
+4) q = _tmp001
+5) _tmp002 = 'd'
+6) r = _tmp002
+7) _tmp003 = &p
+8) m = _tmp003
+9) _tmp004 = &q
+10) n = _tmp004
+11) _tmp005 = &r
+12) o = _tmp005
+13) _tmp006 = &a
+14) x = _tmp006
+15) _tmp007 = &b
+16) y = _tmp007
+17) _tmp008 = &c
+18) z = _tmp008
+19) _tmp009 = *y
+20) *x = _tmp009
+21) _tmp010 = *z
+22) *y = _tmp010
+23) _tmp011 = 0
+24) i = _tmp011
+25) if a<b goto 27
+26) goto 29
+27) _tmp012 = 1
+28) goto 32
+29) _tmp012 = 0
+30) goto 44
+31) goto 56
+32) _tmp013 = i
+33) i = i + 1
+34) _tmp014 = a
+35) a = a + 1
+36) if a<b goto 38
+37) goto 40
+38) _tmp015 = 1
+39) goto 32
+40) _tmp015 = 0
+41) goto 56
+42) goto 43
+43) goto 56
+44) _tmp016 = i
+45) i = i + 1
+46) _tmp017 = b
+47) b = b + 1
+48) if a>b goto 50
+49) goto 52
+50) _tmp018 = 1
+51) goto 44
+52) _tmp018 = 0
+53) goto 56
+54) goto 55
+55) goto 56
+56) _tmp019 = *n
+57) _tmp020 = *o
+58) if _tmp019<_tmp020 goto 60
+59) goto 62
+60) _tmp021 = 1
+61) goto 65
+62) _tmp021 = 0
+63) goto 66
+64) goto 78
+65) goto 78
+66) _tmp022 = *n
+67) _tmp023 = *m
+68) if _tmp022>_tmp023 goto 70
+69) goto 72
+70) _tmp024 = 1
+71) goto 75
+72) _tmp024 = 0
+73) goto 76
+74) goto 77
+75) goto 78
+76) goto 78
+77) goto 78
+78) _tmp025 = 5
+79) _tmp026 = 0
+80) _tmp027 = _tmp026 * 8
+81) _tmp028 = 'y'
+82) car[_tmp027] = _tmp028
+83) _tmp029 = 1
+84) _tmp030 = _tmp029 * 8
+85) _tmp031 = 'o'
+86) car[_tmp030] = _tmp031
+87) _tmp032 = 2
+88) _tmp033 = _tmp032 * 8
+89) _tmp034 = 'u'
+90) car[_tmp033] = _tmp034
+91) _tmp035 = 3
+92) _tmp036 = _tmp035 * 8
+93) _tmp037 = 'r'
+94) car[_tmp036] = _tmp037
+95) _tmp038 = 4
+96) _tmp039 = _tmp038 * 8
+97) _tmp040 = '\n'
+98) car[_tmp039] = _tmp040
+99) _tmp041 = 0
+100) i = _tmp041
+101) _tmp042 = 5
+102) if i<_tmp042 goto 104
+103) goto 106
+104) _tmp043 = 1
+105) goto 112
+106) _tmp043 = 0
+107) goto 113
+108) goto 113
+109) _tmp044 = i
+110) i = i + 1
+111) goto 101
+112) goto 109
+113) _tmp045 = 0
+114) return _tmp045
+115) END of PROGRAM

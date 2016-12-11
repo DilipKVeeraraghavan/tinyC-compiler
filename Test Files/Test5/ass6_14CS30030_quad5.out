@@ -1,0 +1,99 @@
+   ******************************** GLOBAL SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+       multiply                      function      NULL         0         0         function-ST
+           main                      function      NULL         0         0         function-ST
+   ---------------------------------------------------------------------------------------
+
+    ******************************   multiply SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+              a                           int      NULL         8         0                NULL
+ $return_value$                           int      NULL         8         8                NULL
+        _tmp000                           int         2         8        16                NULL
+        _tmp001                           int      NULL         8        24                NULL
+   ---------------------------------------------------------------------------------------
+
+    ******************************       main SYMBOL TABLE **********************************
+   ---------------------------------------------------------------------------------------
+    Symbol Name                   Symbol Type  Initial Value      Size    Offset    function pointer
+ $return_value$                           int      NULL         8         0                NULL
+              p                array(50, int)      NULL       400         8                NULL
+        _tmp000                           int        50         8       408                NULL
+              n                           int      NULL         8       416                NULL
+              j                           int      NULL         8       424                NULL
+              a                           int      NULL         8       432                NULL
+              b                           int      NULL         8       440                NULL
+           suma                           int      NULL         8       448                NULL
+           sumb                           int      NULL         8       456                NULL
+            err                           int      NULL         8       464                NULL
+        _tmp001                           int         0         8       472                NULL
+        _tmp002                           int      NULL         8       480                NULL
+        _tmp003                           int         0         8       488                NULL
+        _tmp004                           int      NULL         8       496                NULL
+        _tmp005                           int      NULL         8       504                NULL
+        _tmp006                           int      NULL         8       512                NULL
+        _tmp007                          void      NULL         0       520                NULL
+        _tmp008                           int      NULL         8       520                NULL
+        _tmp009                           int         1         8       528                NULL
+        _tmp010                           int      NULL         8       536                NULL
+        _tmp011                          void      NULL         0       544                NULL
+        _tmp012                           int      NULL         8       544                NULL
+        _tmp013                           int         1         8       552                NULL
+        _tmp014                           int      NULL         8       560                NULL
+        _tmp015                           int         0         8       568                NULL
+   ---------------------------------------------------------------------------------------
+
+
+
+0)  FUNCTION multiply:
+1) _tmp000 = 2
+2) _tmp001 = a * _tmp000
+3) a = _tmp001
+4) return a
+5)  FUNCTION main:
+6) _tmp000 = 50
+7) a = err
+8) b = err
+9) suma = a
+10) sumb = b
+11) _tmp001 = 0
+12) if a>_tmp001 goto 14
+13) goto 16
+14) _tmp002 = 1
+15) goto 26
+16) _tmp002 = 0
+17) goto 18
+18) _tmp003 = 0
+19) if b>_tmp003 goto 21
+20) goto 23
+21) _tmp004 = 1
+22) goto 26
+23) _tmp004 = 0
+24) goto 48
+25) goto 48
+26) if a<b goto 28
+27) goto 30
+28) _tmp006 = 1
+29) goto 33
+30) _tmp006 = 0
+31) goto 40
+32) goto 47
+33) param sumb
+34) _tmp008 = call multiply, 1
+35) sumb = _tmp008
+36) _tmp009 = 1
+37) _tmp010 = b - _tmp009
+38) b = _tmp010
+39) goto 11
+40) param suma
+41) _tmp012 = call multiply, 1
+42) suma = _tmp012
+43) _tmp013 = 1
+44) _tmp014 = a - _tmp013
+45) a = _tmp014
+46) goto 11
+47) goto 11
+48) _tmp015 = 0
+49) return _tmp015
+50) END of PROGRAM
